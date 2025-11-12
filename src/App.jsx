@@ -7,11 +7,12 @@ import Scene5 from './components/Scene5/Scene5'
 import Scene6 from './components/Scene6/Scene6'
 import SceneTransition from './components/shared/SceneTransition'
 import Button from './components/shared/Button'
+import SceneNavigation from './components/shared/SceneNavigation'
 import { useSceneProgress } from './hooks/useSceneProgress'
 import './styles/scene5.css'
 
 function App() {
-  const { currentScene, completeScene, resetProgress } = useSceneProgress()
+  const { currentScene, completeScene, resetProgress, setCurrentScene } = useSceneProgress()
 
   const renderScene = () => {
     switch(currentScene) {
@@ -70,6 +71,7 @@ function App() {
 
   return (
     <div className="container">
+      <SceneNavigation currentScene={currentScene} onSceneChange={setCurrentScene} />
       {renderScene()}
     </div>
   )

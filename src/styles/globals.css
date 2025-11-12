@@ -728,6 +728,29 @@ body {
   transform: translateY(-20px);
 }
 
+/* Scene Navigation */
+.scene-navigation {
+  position: fixed;
+  top: 1rem;
+  right: 1rem;
+  z-index: 1000;
+}
+
+.scene-select {
+  background: #3b82f6;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.scene-select:hover {
+  background: #2563eb;
+}
+
 /* Button System */
 .btn {
   border: none;

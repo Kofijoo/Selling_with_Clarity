@@ -32,6 +32,7 @@ export function useSceneProgress() {
     sceneData,
     updateSceneData,
     completeScene,
-    resetProgress
+    resetProgress,
+    setCurrentScene
   }
 }
