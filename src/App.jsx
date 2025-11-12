@@ -4,6 +4,7 @@ import Scene2 from './components/Scene2/Scene2'
 import Scene3 from './components/Scene3/Scene3'
 import Scene4 from './components/Scene4/Scene4'
 import Scene5 from './components/Scene5/Scene5'
+import Scene6 from './components/Scene6/Scene6'
 import SceneTransition from './components/shared/SceneTransition'
 import Button from './components/shared/Button'
 import { useSceneProgress } from './hooks/useSceneProgress'
@@ -47,8 +48,14 @@ function App() {
       case 6:
         return (
           <SceneTransition isVisible={true}>
+            <Scene6 onSceneComplete={() => completeScene(6)} />
+          </SceneTransition>
+        )
+      case 7:
+        return (
+          <SceneTransition isVisible={true}>
             <div className="completion-screen">
-              <h1>🎉 Congratulations!</h1>
+              <h1>Congratulations!</h1>
               <p>You've completed the Josh Agyekum Selling with Clarity training</p>
               <Button onClick={resetProgress} variant="primary" size="large">
                 Start Over

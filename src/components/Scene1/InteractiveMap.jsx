@@ -38,7 +38,7 @@ function InteractiveMap({ onAllRegionsExplored }) {
           {exploredRegions.length}/3 regions explored • Scene 1 of 5
           {exploredRegions.length === 3 && (
             <div className="completion-message">
-              ✅ All regions explored! Ready to continue.
+              All regions explored! Ready to continue.
             </div>
           )}
         </div>

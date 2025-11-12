@@ -7,7 +7,7 @@ function WelcomeScreen({ onStartLearning }) {
       <div className="logo-header">
         <img src={jaLogo} alt="JA Logo" className="logo-image" />
       </div>
-      <h1>TEST - Selling Smarter, Everywhere.</h1>
+      <h1>Selling Smarter, Everywhere.</h1>
       <p>Our sellers work across 150+ countries, but our message doesn't always sound the same. Let's align on what makes <span className="brand-name">Josh Agyekum</span> unbeatable.</p>
       <button onClick={onStartLearning} className="cta-button">
         Start Learning
