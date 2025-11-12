@@ -2,9 +2,11 @@ import React from 'react'
 import Scene1 from './components/Scene1/Scene1'
 import Scene2 from './components/Scene2/Scene2'
 import Scene3 from './components/Scene3/Scene3'
+import Scene5 from './components/Scene5/Scene5'
 import SceneTransition from './components/shared/SceneTransition'
 import Button from './components/shared/Button'
 import { useSceneProgress } from './hooks/useSceneProgress'
+import './styles/scene5.css'
 
 function App() {
   const { currentScene, completeScene, resetProgress } = useSceneProgress()
@@ -30,6 +32,12 @@ function App() {
           </SceneTransition>
         )
       case 4:
+        return (
+          <SceneTransition isVisible={true}>
+            <Scene5 onSceneComplete={() => completeScene(4)} />
+          </SceneTransition>
+        )
+      case 5:
         return (
           <SceneTransition isVisible={true}>
             <div className="completion-screen">

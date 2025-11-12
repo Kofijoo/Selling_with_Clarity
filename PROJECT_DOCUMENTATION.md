@@ -3,154 +3,153 @@
 ## Project Overview
 Interactive learning platform for Josh Agyekum's sales training with progressive scene-based navigation.
 
-## Technical Stack
-- **React**: JavaScript library for building user interfaces
-- **Modern React**: Using functional components with hooks (useState, useEffect)
-- **Responsive Design**: Mobile-first approach for 2025/2026 standards
+## Design Requirements
+### Frame Specifications
+- **Container**: 16:9 aspect ratio with blue borders
+- **Sizing**: 95vw × 95vh (mobile: 98vw × 98vh)
+- **Padding**: Minimal (1.5rem desktop, 1rem mobile)
+- **Typography**: Scaled down for perfect fit
+- **Spacing**: Reduced margins and gaps
+- **Elements**: All content must fit within frame without scrolling
 
-## Screen Size Standards (2025/2026)
-### Mobile (Primary)
-- **Width**: 375px - 428px (iPhone 12-15 Pro Max range)
-- **Breakpoint**: 320px minimum, 480px maximum
-
-### Desktop (Secondary)  
-- **Width**: 1440px - 1920px (most common)
-- **Breakpoint**: 1024px minimum for desktop experience
-
----
-
-## Scene Documentation
-
-### Scene 1: Welcome / The Challenge
-**Screen Title**: "Selling Smarter, Everywhere."
-
-**Goal**: Establish context & relevance - recognize need for consistent sales messaging globally
-
-**Visuals**:
-- Global map background with animated pins (EMEA, APAC, LATAM)
-- Floating avatars of 3 sales reps (sales_rep_Asia, sales_rep_Europe, sales_rep_North_America_blob)
-- JA logo subtly in corner
-
-**Copy**: "Our sellers work across 150+ countries — but our message doesn't always sound the same. Let's align on what makes Josh Agyekum unbeatable."
-
-**Components Needed**:
-- WelcomeScreen component
-- InteractiveMap component  
-- RegionPopup component
-- SalesRepAvatar component
-
-**User Flow**:
-```
-Start → "Selling Smarter, Everywhere" Screen → Interactive Map (3 regions)
-→ Click EMEA → Pop-up: "Clients love Josh Agyekum, but explaining compliance in multiple countries is tricky."
-→ Click APAC → Pop-up: "I need faster ways to learn about new features."
-→ Click LATAM → Pop-up: "Handling objections takes time—I need better examples."
-→ All regions viewed → CTA: "Let's fix this together" → Transition to Scene 2
-```
-
-**State Management**:
-- `exploredRegions`: Array tracking which regions user clicked
-- `allRegionsExplored`: Boolean (true when all 3 regions clicked)
-- `showNextButton`: Boolean (appears when allRegionsExplored = true)
-
-**Technical Requirements**:
-- Track user interaction with each region
-- Prevent progression until all regions explored
-- Smooth transitions between states
-- Responsive map that works on mobile and desktop
+### Visual Standards
+- **Colors**: Primary #3b82f6 (blue), backgrounds #f0f9ff to #e0f2fe
+- **Borders**: 2-3px solid, rounded corners 8-12px
+- **Shadows**: Subtle (0 3px 8px rgba(0,0,0,0.04))
+- **Typography**: Scaled hierarchy (2rem → 1.6rem → 1rem → 0.85rem)
+- **Interactive**: Hover effects with minimal transforms
 
 ---
 
-### Scene 2: Product Deep Dive  
-**Goal**: Build understanding of Josh Agyekum's platform and differentiators
+## Complete Scene Documentation
 
-**Components Needed**:
-- ProductOverview component
-- FeatureIcon component (reusable)
-- FeatureCard component  
-- ProgressBar component
+### Scene 1: Global Sales Challenge
+**Title**: "Selling Smarter, Everywhere"
+**Goal**: Establish need for consistent global messaging
 
-**User Flow**:
-```
-"Know What You're Selling" Screen → 5 clickable icons → Click icon → Mini card opens
-→ All 5 icons explored → Progress bar 100% → CTA: "Next: Try It Out" → Scene 3
-```
+**Components**:
+- WelcomeScreen, InteractiveMap, RegionPopup, SalesRepAvatar
 
-**Features to Cover**:
-1. **Payroll**: Global payroll processing
-2. **Compliance**: Legal compliance automation  
-3. **HRIS**: Human Resources Information System - employee data management
-4. **Equipment**: Hardware/software provisioning
-5. **Benefits**: Employee benefits administration
+**Flow**: Welcome → Map (3 regions) → All explored → Next
 
-**State Management**:
-- `exploredFeatures`: Array of explored feature IDs
-- `progressPercentage`: Number (0-100)
-- `selectedFeature`: Object (currently opened feature card)
+**Key Elements**:
+- World map with clickable regions (EMEA, APAC, LATAM)
+- Floating sales rep avatars positioned on map points
+- Region popups with sales challenges
+- Progress tracking until all regions explored
 
 ---
 
-## Development Approach
+### Scene 2: Product Knowledge
+**Title**: "Know What You're Selling"
+**Goal**: Build understanding of Josh Agyekum platform
 
-### Phase 1: Project Setup
-1. Initialize React project with Vite (faster than Create React App)
-2. Set up folder structure
-3. Install essential dependencies
-4. Configure responsive design system
+**Components**:
+- ProductOverview, FeatureIcon, FeatureCard, ProgressBar
 
-### Phase 2: Scene 1 Development
-1. Create basic components
-2. Implement state management
-3. Add interactive map functionality
-4. Test user flow completion
+**Flow**: Overview → 5 Features → All explored → Next
 
-### Phase 3: Scene 2 Development  
-1. Build feature exploration system
-2. Implement progress tracking
-3. Create smooth transitions
-4. Test completion logic
-
-### Phase 4: Integration & Polish
-1. Connect scenes with routing
-2. Add animations/transitions
-3. Responsive testing
-4. Performance optimization
+**Features**:
+1. Payroll - Global processing
+2. Compliance - Legal automation
+3. HRIS - Employee data management
+4. Equipment - Hardware/software provisioning
+5. Benefits - Employee benefits administration
 
 ---
 
-## Key Definitions
+### Scene 3: Objection Handling
+**Title**: "Your Turn: Objection Handling"
+**Goal**: Practice handling customer objections
 
-- **React**: JavaScript library for building user interfaces using components
-- **Component**: Reusable piece of UI code that returns JSX (JavaScript XML)
-- **State**: Data that changes over time and affects what the user sees
-- **Hook**: Special React function (starts with 'use') that lets you use React features
-- **JSX**: JavaScript XML - syntax that looks like HTML but is JavaScript
-- **Props**: Properties passed from parent component to child component
-- **Vite**: Build tool that's faster than traditional bundlers like Webpack
-- **CTA**: Call To Action - button or element that prompts user interaction
-- **HRIS**: Human Resources Information System
-- **SaaS**: Software as a Service
+**Components**:
+- CustomerScenario, ScenarioFeedback, ScoreDisplay
+
+**Flow**: Scenario → Response → Feedback → Next → Score
+
+**Scenarios**:
+1. Local payroll provider objection
+2. Pricing concerns
+3. Feature availability questions
+
+**Scoring**: 3 scenarios, immediate feedback, final score display
 
 ---
 
-## File Structure (Planned)
+### Scene 4: Pitch Practice (Future)
+**Title**: "Your 60-Second Pitch"
+**Goal**: Reinforce message fluency
+
+**Components**: PitchInput, AIFeedback, ExamplePitch
+
+**Flow**: Prompt → Input → AI Feedback → Example → Next
+
+---
+
+### Scene 5: Reinforcement Toolkit (Future)
+**Title**: "Keep Getting Better"
+**Goal**: Support long-term retention
+
+**Components**: QuickQuiz, CheatSheet, DiscoveryGuide, ProductUpdates
+
+**Flow**: Menu → Resource Selection → Completion → Finish
+
+---
+
+## Technical Implementation
+
+### State Management
+- `useSceneProgress` hook for navigation
+- Scene-specific state (explored items, scores, selections)
+- Progress tracking and completion logic
+
+### Responsive Design
+- Mobile-first approach
+- Breakpoints: 767px (mobile), 1023px (tablet), 1024px+ (desktop)
+- Scaled typography and spacing
+- Touch-friendly interactions
+
+### Performance
+- Vite build system
+- Component lazy loading
+- Optimized images and assets
+- Minimal bundle size
+
+---
+
+## Frame Fitting Requirements
+
+### Typography Scale
+- **H1**: 2.4rem → 1.8rem (mobile)
+- **H2**: 2rem → 1.6rem (mobile)
+- **H3**: 1.3rem → 1.1rem (mobile)
+- **Body**: 0.95rem → 0.85rem (mobile)
+- **Small**: 0.85rem → 0.8rem (mobile)
+
+### Spacing Scale
+- **Container**: 1.5rem → 1rem (mobile)
+- **Sections**: 1.5rem → 1rem (mobile)
+- **Elements**: 0.8rem → 0.6rem (mobile)
+- **Gaps**: 1.5rem → 1rem (mobile)
+
+### Component Sizing
+- **Buttons**: 12px 32px → 10px 24px (mobile)
+- **Icons**: 60px → 45px (mobile)
+- **Avatars**: 60px → 40px (mobile)
+- **Cards**: Reduced padding by 25%
+
+---
+
+## File Structure
 ```
 src/
 ├── components/
-│   ├── Scene1/
-│   │   ├── WelcomeScreen.jsx
-│   │   ├── InteractiveMap.jsx
-│   │   └── RegionPopup.jsx
-│   ├── Scene2/
-│   │   ├── ProductOverview.jsx
-│   │   ├── FeatureIcon.jsx
-│   │   └── FeatureCard.jsx
-│   └── shared/
-│       ├── ProgressTracker.jsx
-│       └── Button.jsx
-├── hooks/
-│   └── useSceneProgress.js
-├── styles/
-│   └── globals.css
+│   ├── Scene1/ (WelcomeScreen, InteractiveMap, RegionPopup, SalesRepAvatar)
+│   ├── Scene2/ (ProductOverview, FeatureIcon, FeatureCard)
+│   ├── Scene3/ (CustomerScenario, ScenarioFeedback, ScoreDisplay)
+│   └── shared/ (Button, ProgressBar, SceneTransition)
+├── hooks/ (useSceneProgress.js)
+├── styles/ (globals.css)
+├── assets/ (images, icons)
 └── App.jsx
 ```
