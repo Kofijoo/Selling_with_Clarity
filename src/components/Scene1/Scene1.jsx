@@ -14,7 +14,7 @@ function Scene1({ onSceneComplete }) {
     setAllRegionsExplored(true)
   }
 
-  const handleFixTogether = () => {
+  const handleContinue = () => {
     onSceneComplete()
   }
 
@@ -27,8 +27,8 @@ function Scene1({ onSceneComplete }) {
           <InteractiveMap onAllRegionsExplored={handleAllRegionsExplored} />
           <div className="next-button-container">
             {allRegionsExplored && (
-              <button onClick={handleFixTogether} className="cta-button">
-                Let's Fix This Together
+              <button onClick={handleContinue} className="cta-button">
+                Continue to Product Overview →
               </button>
             )}
           </div>

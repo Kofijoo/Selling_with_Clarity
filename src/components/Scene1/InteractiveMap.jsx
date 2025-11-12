@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import RegionPopup from './RegionPopup'
 import SalesRepAvatar from './SalesRepAvatar'
+import worldMap from '../../assets/map_new.png'
 
 const regions = [
   { id: 'emea', name: 'EMEA', quote: 'Clients love Josh Agyekum, but explaining compliance in multiple countries is tricky.', character: 'sales_rep_Europe' },
@@ -30,11 +31,22 @@ function InteractiveMap({ onAllRegionsExplored }) {
 
   return (
     <div className="interactive-map">
-      <h2>Global Sales Challenge</h2>
+      <div className="map-header">
+        <h2>Global Sales Challenge</h2>
+        <p className="map-instructions">Click each region to discover how sales reps tackle challenges around the world.</p>
+        <div className="scene-progress">
+          {exploredRegions.length}/3 regions explored • Scene 1 of 5
+          {exploredRegions.length === 3 && (
+            <div className="completion-message">
+              ✅ All regions explored! Ready to continue.
+            </div>
+          )}
+        </div>
+      </div>
       <div className="world-map">
         <div className="map-background">
           <img 
-            src="/src/assets/flat_world_map _vector.png" 
+            src={worldMap} 
             alt="World Map" 
             className="map-image"
           />

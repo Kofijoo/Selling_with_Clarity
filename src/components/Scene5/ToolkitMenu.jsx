@@ -5,28 +5,28 @@ const modules = [
     id: 'quiz',
     title: 'Quick Quiz',
     description: 'Test your knowledge with 4 questions',
-    icon: '🧠',
+    icon: 'Q',
     color: '#3b82f6'
   },
   {
     id: 'cheatsheet',
     title: 'Objection Cheat Sheet',
     description: 'Quick reference for common objections',
-    icon: '📋',
+    icon: 'CS',
     color: '#10b981'
   },
   {
     id: 'discovery',
     title: 'Discovery Question Guide',
     description: 'Essential questions for client meetings',
-    icon: '❓',
+    icon: 'DG',
     color: '#f59e0b'
   },
   {
     id: 'updates',
     title: 'Product Launch Updates',
     description: 'Latest features and improvements',
-    icon: '🚀',
+    icon: 'PU',
     color: '#8b5cf6'
   }
 ]

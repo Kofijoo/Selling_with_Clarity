@@ -2,6 +2,7 @@ import React from 'react'
 import Scene1 from './components/Scene1/Scene1'
 import Scene2 from './components/Scene2/Scene2'
 import Scene3 from './components/Scene3/Scene3'
+import Scene4 from './components/Scene4/Scene4'
 import Scene5 from './components/Scene5/Scene5'
 import SceneTransition from './components/shared/SceneTransition'
 import Button from './components/shared/Button'
@@ -34,10 +35,16 @@ function App() {
       case 4:
         return (
           <SceneTransition isVisible={true}>
-            <Scene5 onSceneComplete={() => completeScene(4)} />
+            <Scene4 onSceneComplete={() => completeScene(4)} />
           </SceneTransition>
         )
       case 5:
+        return (
+          <SceneTransition isVisible={true}>
+            <Scene5 onSceneComplete={() => completeScene(5)} />
+          </SceneTransition>
+        )
+      case 6:
         return (
           <SceneTransition isVisible={true}>
             <div className="completion-screen">
