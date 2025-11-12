@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 560">
+  <title>Flat World Map (Abstracted Regions)</title>
+  <defs>
+    <style>
+      .region { fill: #1fb6c9; transition: 200ms; }
+      .region:hover { fill: #1292a3; }
+      .pin { fill: #0b5fff; }
+      .label { font: 600 16px/1.2 Inter, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif; fill:#0f172a; }
+      .progress-bg { fill: #e2e8f0; }
+      .progress-fg { fill: #0b5fff; }
+    </style>
+  </defs>
+
+  <!-- Ocean background (optional, remove if you need transparent) -->
+  <rect x="0" y="0" width="1000" height="560" fill="#f8fafc"/>
+
+  <!-- Americas -->
+  <g id="americas" class="region" tabindex="0">
+    <!-- North America blob -->
+    <ellipse cx="220" cy="200" rx="135" ry="95"/>
+    <!-- Central America connector -->
+    <path d="M320,270 C300,280 270,300 260,320 C255,335 270,345 285,345 C315,345 330,330 340,315 C350,300 350,285 340,275 Z"/>
+    <!-- South America blob -->
+    <ellipse cx="320" cy="380" rx="80" ry="110"/>
+  </g>
+
+  <!-- EMEA -->
+  <g id="emea" class="region" tabindex="0">
+    <!-- Europe/Middle East -->
+    <ellipse cx="520" cy="180" rx="165" ry="110"/>
+    <!-- Africa -->
+    <ellipse cx="520" cy="340" rx="95" ry="130"/>
+  </g>
+
+  <!-- APAC -->
+  <g id="apac" class="region" tabindex="0">
+    <!-- Asia -->
+    <ellipse cx="800" cy="240" rx="180" ry="130"/>
+    <!-- SE Asia archipelago hint -->
+    <ellipse cx="780" cy="360" rx="70" ry="40"/>
+    <!-- Australia -->
+    <ellipse cx="900" cy="420" rx="85" ry="50"/>
+  </g>
+
+  <!-- Optional pins to show where your clickable overlays might anchor -->
+  <circle class="pin" cx="265" cy="260" r="6"/>
+  <circle class="pin" cx="520" cy="260" r="6"/>
+  <circle class="pin" cx="820" cy="300" r="6"/>
+
+  <!-- Labels (remove if you want a pure map) -->
+  <text class="label" x="195" y="115">Americas</text>
+  <text class="label" x="470" y="95">EMEA</text>
+  <text class="label" x="780" y="110">APAC</text>
+</svg>
