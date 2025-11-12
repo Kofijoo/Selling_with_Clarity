@@ -38,34 +38,38 @@ const updates = [
 function ProductUpdates({ onComplete, onBack }) {
   return (
     <div className="product-updates">
-      <div className="updates-header">
+      <div className="updates-sidebar">
         <button onClick={onBack} className="back-button">← Back</button>
-        <h3>Product Launch Updates</h3>
-        <p>Latest features and improvements to highlight in sales conversations</p>
+        <div className="updates-header">
+          <h3>Product Launch Updates</h3>
+          <p>Latest features and improvements to highlight in sales conversations</p>
+        </div>
+        
+        <div className="updates-actions">
+          <button onClick={onComplete} className="btn btn-primary btn-medium">
+            Continue
+          </button>
+        </div>
       </div>
 
-      <div className="updates-timeline">
-        {updates.map(update => (
-          <div key={update.id} className="update-card">
-            <div className="update-header">
-              <div className="update-type">{update.type}</div>
-              <div className="update-date">{update.date}</div>
+      <div className="updates-content">
+        <div className="updates-timeline">
+          {updates.map(update => (
+            <div key={update.id} className="update-card">
+              <div className="update-header">
+                <div className="update-type">{update.type}</div>
+                <div className="update-date">{update.date}</div>
+              </div>
+              
+              <h4>{update.title}</h4>
+              <p className="update-description">{update.description}</p>
+              
+              <div className="update-impact">
+                <strong>Sales Impact:</strong> {update.impact}
+              </div>
             </div>
-            
-            <h4>{update.title}</h4>
-            <p className="update-description">{update.description}</p>
-            
-            <div className="update-impact">
-              <strong>Sales Impact:</strong> {update.impact}
-            </div>
-          </div>
-        ))}
-      </div>
-
-      <div className="updates-actions">
-        <button onClick={onComplete} className="btn btn-primary btn-medium">
-          Continue
-        </button>
+          ))}
+        </div>
       </div>
     </div>
   )
