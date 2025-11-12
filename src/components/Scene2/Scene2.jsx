@@ -91,11 +91,13 @@ function Scene2({ onSceneComplete }) {
         
         <ProgressBar progress={exploredFeatures.length} total={5} />
         
-        {allFeaturesExplored && (
-          <button onClick={onSceneComplete} className="cta-button">
-            Next: Try It Out
-          </button>
-        )}
+        <div className="next-button-container">
+          {allFeaturesExplored && (
+            <button onClick={onSceneComplete} className="cta-button">
+              Next: Try It Out
+            </button>
+          )}
+        </div>
       </ProductOverview>
 
       {selectedFeature && (

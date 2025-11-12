@@ -25,11 +25,13 @@ function Scene1({ onSceneComplete }) {
       ) : (
         <>
           <InteractiveMap onAllRegionsExplored={handleAllRegionsExplored} />
-          {allRegionsExplored && (
-            <button onClick={handleFixTogether} className="cta-button">
-              Let's Fix This Together
-            </button>
-          )}
+          <div className="next-button-container">
+            {allRegionsExplored && (
+              <button onClick={handleFixTogether} className="cta-button">
+                Let's Fix This Together
+              </button>
+            )}
+          </div>
         </>
       )}
     </div>
