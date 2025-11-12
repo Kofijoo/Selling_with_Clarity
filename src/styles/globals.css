@@ -717,83 +717,83 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 2rem;
+  padding: 1.5rem;
   background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 100%);
 }
 
 .scenario-header {
   text-align: center;
-  margin-bottom: 3rem;
+  margin-bottom: 1.5rem;
 }
 
 .scenario-header h2 {
-  font-size: 2.5rem;
+  font-size: 2rem;
   color: #1f2937;
-  margin-bottom: 1rem;
+  margin-bottom: 0.8rem;
   font-weight: 700;
 }
 
 .scenario-progress {
-  font-size: 1.2rem;
+  font-size: 1rem;
   color: #3b82f6;
   font-weight: 600;
   background: white;
-  padding: 0.5rem 1.5rem;
-  border-radius: 25px;
+  padding: 0.4rem 1.2rem;
+  border-radius: 20px;
   border: 2px solid #3b82f6;
 }
 
 .customer-scenario {
-  max-width: 800px;
+  max-width: 900px;
   width: 100%;
 }
 
 .scenario-title {
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   font-weight: 700;
   color: #1f2937;
-  margin-bottom: 2rem;
+  margin-bottom: 1.5rem;
   text-align: center;
   background: white;
-  padding: 1rem 2rem;
-  border-radius: 12px;
+  padding: 0.8rem 1.5rem;
+  border-radius: 10px;
   border: 2px solid #e5e7eb;
 }
 
 .chat-simulation {
   background: white;
-  border-radius: 20px;
-  padding: 3rem;
-  box-shadow: 0 15px 35px rgba(0,0,0,0.1);
-  border: 3px solid #e5e7eb;
+  border-radius: 16px;
+  padding: 2rem;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+  border: 2px solid #e5e7eb;
 }
 
 .customer-message {
   display: flex;
   align-items: flex-start;
-  gap: 1rem;
-  margin-bottom: 2rem;
+  gap: 0.8rem;
+  margin-bottom: 1.5rem;
 }
 
 .customer-avatar {
-  width: 40px;
-  height: 40px;
+  width: 35px;
+  height: 35px;
   background: #3b82f6;
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 1.2rem;
+  font-size: 1rem;
   flex-shrink: 0;
 }
 
 .message-bubble {
   background: #f3f4f6;
-  padding: 1rem 1.5rem;
-  border-radius: 18px;
-  font-size: 1rem;
+  padding: 0.8rem 1.2rem;
+  border-radius: 14px;
+  font-size: 0.95rem;
   line-height: 1.4;
-  max-width: 80%;
+  max-width: 85%;
 }
 
 .message-bubble.customer {
@@ -804,37 +804,37 @@ body {
 .your-response-label {
   font-weight: 600;
   color: #374151;
-  margin-bottom: 1rem;
-  font-size: 1rem;
+  margin-bottom: 0.8rem;
+  font-size: 0.95rem;
 }
 
 .response-options {
   display: flex;
   flex-direction: column;
-  gap: 0.75rem;
+  gap: 0.6rem;
 }
 
 .response-option {
   display: flex;
   align-items: center;
-  gap: 1rem;
-  padding: 1.5rem 2rem;
-  border: 3px solid #e5e7eb;
-  border-radius: 16px;
+  gap: 0.8rem;
+  padding: 1rem 1.5rem;
+  border: 2px solid #e5e7eb;
+  border-radius: 12px;
   background: white;
   cursor: pointer;
   transition: all 0.3s ease;
   text-align: left;
-  font-size: 1.1rem;
-  line-height: 1.5;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  font-size: 0.95rem;
+  line-height: 1.4;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.04);
 }
 
 .response-option:hover:not(:disabled) {
   border-color: #3b82f6;
   background: #f8fafc;
-  transform: translateY(-2px);
-  box-shadow: 0 4px 12px rgba(59, 130, 246, 0.15);
+  transform: translateY(-1px);
+  box-shadow: 0 3px 8px rgba(59, 130, 246, 0.12);
 }
 
 .response-option.selected {
@@ -872,7 +872,7 @@ body {
   left: 0;
   right: 0;
   bottom: 0;
-  background: rgba(0,0,0,0.5);
+  background: rgba(0,0,0,0.4);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -881,12 +881,12 @@ body {
 
 .feedback-popup {
   background: white;
-  padding: 2rem;
-  border-radius: 16px;
-  max-width: 400px;
+  padding: 1.5rem;
+  border-radius: 12px;
+  max-width: 380px;
   text-align: center;
-  box-shadow: 0 20px 40px rgba(0,0,0,0.2);
-  border: 3px solid #e5e7eb;
+  box-shadow: 0 12px 24px rgba(0,0,0,0.15);
+  border: 2px solid #e5e7eb;
 }
 
 .feedback-popup.correct {
@@ -898,39 +898,39 @@ body {
 }
 
 .feedback-icon {
-  font-size: 3rem;
-  margin-bottom: 1rem;
+  font-size: 2.5rem;
+  margin-bottom: 0.8rem;
 }
 
 .feedback-content h3 {
-  font-size: 1.5rem;
-  margin-bottom: 1rem;
+  font-size: 1.3rem;
+  margin-bottom: 0.8rem;
   color: #1f2937;
 }
 
 .feedback-content p {
-  font-size: 1rem;
+  font-size: 0.9rem;
   color: #6b7280;
-  line-height: 1.5;
-  margin-bottom: 2rem;
+  line-height: 1.4;
+  margin-bottom: 1.5rem;
 }
 
 .score-display {
-  max-width: 700px;
+  max-width: 800px;
   width: 100%;
   text-align: center;
 }
 
 .score-header h2 {
-  font-size: 3rem;
+  font-size: 2.2rem;
   color: #1f2937;
-  margin-bottom: 1.5rem;
+  margin-bottom: 1rem;
   font-weight: 700;
 }
 
 .score-stars {
-  font-size: 2rem;
-  margin-bottom: 1rem;
+  font-size: 1.6rem;
+  margin-bottom: 0.8rem;
 }
 
 .star.filled {
@@ -943,47 +943,47 @@ body {
 }
 
 .score-text {
-  font-size: 1.2rem;
+  font-size: 1rem;
   font-weight: 600;
   color: #3b82f6;
-  margin-bottom: 2rem;
+  margin-bottom: 1.5rem;
 }
 
 .score-message {
   background: white;
-  padding: 1.5rem;
-  border-radius: 12px;
-  margin-bottom: 2rem;
+  padding: 1.2rem;
+  border-radius: 10px;
+  margin-bottom: 1.5rem;
   border: 2px solid #e5e7eb;
 }
 
 .score-message p {
-  font-size: 1.1rem;
+  font-size: 0.95rem;
   color: #374151;
   margin: 0;
 }
 
 .scenario-summary {
   background: white;
-  padding: 1.5rem;
-  border-radius: 12px;
-  margin-bottom: 2rem;
+  padding: 1.2rem;
+  border-radius: 10px;
+  margin-bottom: 1.5rem;
   border: 2px solid #e5e7eb;
   text-align: left;
 }
 
 .scenario-summary h3 {
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   color: #1f2937;
-  margin-bottom: 1rem;
+  margin-bottom: 0.8rem;
   text-align: center;
 }
 
 .summary-item {
   display: flex;
   align-items: center;
-  gap: 0.75rem;
-  padding: 0.5rem 0;
+  gap: 0.6rem;
+  padding: 0.4rem 0;
   border-bottom: 1px solid #f3f4f6;
 }
 
@@ -992,11 +992,11 @@ body {
 }
 
 .summary-icon {
-  font-size: 1.2rem;
+  font-size: 1rem;
 }
 
 .summary-text {
-  font-size: 0.95rem;
+  font-size: 0.85rem;
   color: #374151;
 }
 
@@ -1127,31 +1127,107 @@ body {
     margin: 0.5rem auto;
   }
   
-  .chat-simulation {
-    padding: 2rem;
+  .scene3 {
+    padding: 1rem;
   }
   
-  .response-option {
-    padding: 1.2rem 1.5rem;
-    font-size: 1rem;
-  }
-  
-  .feedback-popup {
-    margin: 1rem;
-    padding: 2rem;
-  }
-  
-  .score-display {
-    padding: 0 1rem;
+  .scenario-header {
+    margin-bottom: 1rem;
   }
   
   .scenario-header h2 {
-    font-size: 2rem;
+    font-size: 1.6rem;
   }
   
   .scenario-progress {
+    font-size: 0.9rem;
+    padding: 0.3rem 1rem;
+  }
+  
+  .scenario-title {
+    font-size: 1.1rem;
+    padding: 0.6rem 1rem;
+    margin-bottom: 1rem;
+  }
+  
+  .chat-simulation {
+    padding: 1.5rem;
+  }
+  
+  .customer-message {
+    margin-bottom: 1.2rem;
+  }
+  
+  .customer-avatar {
+    width: 30px;
+    height: 30px;
+    font-size: 0.9rem;
+  }
+  
+  .message-bubble {
+    padding: 0.6rem 1rem;
+    font-size: 0.85rem;
+  }
+  
+  .response-option {
+    padding: 0.8rem 1.2rem;
+    font-size: 0.85rem;
+    gap: 0.6rem;
+  }
+  
+  .feedback-popup {
+    margin: 0.5rem;
+    padding: 1.2rem;
+    max-width: 320px;
+  }
+  
+  .feedback-icon {
+    font-size: 2rem;
+  }
+  
+  .feedback-content h3 {
+    font-size: 1.1rem;
+  }
+  
+  .feedback-content p {
+    font-size: 0.8rem;
+    margin-bottom: 1.2rem;
+  }
+  
+  .score-display {
+    padding: 0 0.5rem;
+  }
+  
+  .score-header h2 {
+    font-size: 1.8rem;
+  }
+  
+  .score-stars {
+    font-size: 1.3rem;
+  }
+  
+  .score-text {
+    font-size: 0.9rem;
+  }
+  
+  .score-message {
+    padding: 1rem;
+  }
+  
+  .score-message p {
+    font-size: 0.85rem;
+  }
+  
+  .scenario-summary {
+    padding: 1rem;
+  }
+  
+  .scenario-summary h3 {
     font-size: 1rem;
-    padding: 0.4rem 1.2rem;
+  }
+  
+  .summary-text {
+    font-size: 0.8rem;
   }
   
   .card-content {
