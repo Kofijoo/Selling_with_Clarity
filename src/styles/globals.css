@@ -358,22 +358,22 @@ body {
 }
 
 .region-hotspot.emea {
-  top: 25%;
-  left: 55%;
+  top: 22%;
+  left: 57%;
   width: 15px;
   height: 15px;
 }
 
 .region-hotspot.apac {
-  top: 45%;
-  left: 75%;
+  top: 42%;
+  left: 77%;
   width: 15px;
   height: 15px;
 }
 
 .region-hotspot.latam {
-  top: 60%;
-  left: 25%;
+  top: 57%;
+  left: 27%;
   width: 15px;
   height: 15px;
 }
@@ -398,18 +398,18 @@ body {
 }
 
 .sales-rep-avatar.emea {
-  top: 22%;
-  left: 58%;
+  top: 20%;
+  left: 60%;
 }
 
 .sales-rep-avatar.apac {
-  top: 42%;
-  left: 78%;
+  top: 40%;
+  left: 80%;
 }
 
 .sales-rep-avatar.latam {
-  top: 57%;
-  left: 28%;
+  top: 55%;
+  left: 30%;
 }
 
 .avatar-icon {
@@ -731,7 +731,7 @@ body {
 /* Scene Navigation */
 .scene-navigation {
   position: fixed;
-  top: 1rem;
+  bottom: 1rem;
   right: 1rem;
   z-index: 1000;
 }
@@ -740,15 +740,28 @@ body {
   background: #3b82f6;
   color: white;
   border: none;
-  padding: 0.5rem 1rem;
+  padding: 0.4rem 0.8rem;
   border-radius: 6px;
   cursor: pointer;
-  font-size: 0.9rem;
+  font-size: 0.8rem;
   font-weight: 600;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
 }
 
 .scene-select:hover {
   background: #2563eb;
+}
+
+@media (max-width: 767px) {
+  .scene-navigation {
+    bottom: 0.5rem;
+    right: 0.5rem;
+  }
+  
+  .scene-select {
+    padding: 0.3rem 0.6rem;
+    font-size: 0.7rem;
+  }
 }
 
 /* Button System */
@@ -1369,6 +1382,36 @@ body {
   
   .product-overview {
     padding: 1rem;
+  }
+  
+  .sales-rep-avatar.emea {
+    top: 18%;
+    left: 58%;
+  }
+  
+  .sales-rep-avatar.apac {
+    top: 38%;
+    left: 78%;
+  }
+  
+  .sales-rep-avatar.latam {
+    top: 53%;
+    left: 28%;
+  }
+  
+  .region-hotspot.emea {
+    top: 20%;
+    left: 55%;
+  }
+  
+  .region-hotspot.apac {
+    top: 40%;
+    left: 75%;
+  }
+  
+  .region-hotspot.latam {
+    top: 55%;
+    left: 25%;
   }
   
   .card-content {
