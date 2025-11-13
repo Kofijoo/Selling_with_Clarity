@@ -358,22 +358,22 @@ body {
 }
 
 .region-hotspot.emea {
-  top: 22%;
-  left: 57%;
+  top: 37%;
+  left: 52%;
   width: 15px;
   height: 15px;
 }
 
 .region-hotspot.apac {
-  top: 42%;
-  left: 77%;
+  top: 52%;
+  left: 72%;
   width: 15px;
   height: 15px;
 }
 
 .region-hotspot.latam {
-  top: 57%;
-  left: 27%;
+  top: 67%;
+  left: 22%;
   width: 15px;
   height: 15px;
 }
@@ -398,18 +398,18 @@ body {
 }
 
 .sales-rep-avatar.emea {
-  top: 20%;
-  left: 60%;
+  top: 35%;
+  left: 48%;
 }
 
 .sales-rep-avatar.apac {
-  top: 40%;
-  left: 80%;
+  top: 50%;
+  left: 68%;
 }
 
 .sales-rep-avatar.latam {
-  top: 55%;
-  left: 30%;
+  top: 65%;
+  left: 18%;
 }
 
 .avatar-icon {
@@ -1385,33 +1385,33 @@ body {
   }
   
   .sales-rep-avatar.emea {
-    top: 18%;
-    left: 58%;
+    top: 33%;
+    left: 46%;
   }
   
   .sales-rep-avatar.apac {
-    top: 38%;
-    left: 78%;
+    top: 48%;
+    left: 66%;
   }
   
   .sales-rep-avatar.latam {
-    top: 53%;
-    left: 28%;
+    top: 63%;
+    left: 16%;
   }
   
   .region-hotspot.emea {
-    top: 20%;
-    left: 55%;
+    top: 35%;
+    left: 50%;
   }
   
   .region-hotspot.apac {
-    top: 40%;
-    left: 75%;
+    top: 50%;
+    left: 70%;
   }
   
   .region-hotspot.latam {
-    top: 55%;
-    left: 25%;
+    top: 65%;
+    left: 20%;
   }
   
   .card-content {
